@@ -60,4 +60,3 @@ end
 #       take_out_orders_index, dine_in_orders_index, served_orders_index
 #     )
 #   end
-  
