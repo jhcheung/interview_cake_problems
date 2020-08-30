@@ -16,6 +16,16 @@ def can_two_movies_fill_flight?(movie_lengths, flight_length)
 end
 
 
+# Bonus
+
+#     What if we wanted the movie lengths to sum to something close to the flight length (say, within 20 minutes)?
+#       instead of checking if movie_lengths_seen include?, do if (movie_lengths_seen & (match_movie_length - 20..match_movie_length + 20).to_a).any?
+#     What if we wanted to fill the flight length as nicely as possible with any number of movies (not just 2)?
+#       Would likely increase complexity. Instead of doing a simple include check, we would have to iterate through the rest of the movie and see if multiple of them added together equalled the matching time
+#     What if we knew that movie_lengths was sorted? Could we save some space and/or time?
+#       could space time. if we know it's in order, then we can stop checking for matches after the number exceeds/is less than our desired number.
+
+
 
 # first solution
 # def can_two_movies_fill_flight?(movie_lengths, flight_length)
